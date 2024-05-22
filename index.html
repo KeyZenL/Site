@@ -1,11 +1,114 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Организация Спецтехника</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .wrapper {
+            width: 1920px;
+            height: 1080px;
+            background: url('https://aquarium-fish-home.ru/wp-content/uploads/2023/06/675654333.jpg') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            overflow-y: auto;
+            padding-top: 50px; /* Отступ сверху для красоты */
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            position: fixed; /* Фиксированное положение */
+            top: 0; /* Расположение сверху */
+            z-index: 1000; /* Поверх других элементов */
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 100px auto 20px auto; /* Отступ сверху для заголовка */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #4CAF50; /* Зеленый цвет заголовка */
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4CAF50; /* Подчеркивание заголовка зеленой линией */
+            padding-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Черный фон с прозрачностью */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <div class="wrapper">
+        <header>
+            <h1>Организация Спецтехника</h1>
+        </header>
+        <div class="content">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>Мы предоставляем в аренду специализированную технику для строительных и промышленных работ. В нашем парке техники вы найдете краны, тракторы, экскаваторы и другую спецтехнику для выполнения различных задач.</p>
 
+                <h2>Наши услуги</h2>
+                <p>Мы предлагаем аренду спецтехники на выгодных условиях. Вся техника находится в отличном состоянии и регулярно проходит техническое обслуживание. Наши операторы имеют большой опыт работы и всегда готовы помочь вам в выполнении ваших задач.</p>
+
+                <h2>Контакты</h2>
+                <p>Адрес: ул. Примерная, д. 1, г. Москва</p>
+                <p>Телефон: +7 (123) 456-78-90</p>
+                <p>Email: info@example.com</p>
+            </div>
+        </div>
+        <footer>
+            &copy; 2024 Организация Спецтехника. Все права защищены.
+        </footer>
+    </div>
 </body>
 </html>
